@@ -1,11 +1,51 @@
-Day 1 - 3.5.2026
+**Day 1 - 3.5.2026**
 
+**Chapter 1 - Revision**
 What I learned?
-Chapter 1 - Revision
     -Practiced Commands
     -Revised Theory
 
 Where I stuck?
     -whereis, which, locate commands
-    -Binaries
-    
+    -BinariesChapter 1 - Revision
+
+**Chapter 2 - Revision**
+What I learned?
+    -Text Manipulation
+    -Commands practice
+
+Where I stuck
+    -Search lines that start with root in /etc/passwd
+    -Search lines ending with .conf
+    -Watch new lines being added live to access.log
+
+Solutions:
+    - "\." is for actual . not character in regex
+    - $ = End of Line (Meaning vary depending on situation)
+
+**Chapter 3 - Revision**
+What I Learned?
+    -netstat - Shows all the connection coming and going out of the system
+    -ss - Detailed and human readable
+
+Where I stuck?
+    -dns server
+
+**Chapter 4 - Revision**
+What I learned?
+    -apt remove -> Does'nt remove configuration files
+    -apt purge -> removes file completely
+
+Where I stuck?
+    -Nowhere !
+
+**Chapter 5 - Revision**
+    What I learned?
+        -Nothing new just revision.
+
+**Chapter 6 - Revision**
+    -nice - used to control process priority, nice is used to set priority before the process starts
+            nice -n 10 command
+    -renice - used to set priority after the process starts or already running process
+            renice -n 10 -p 123
+    NOTE: priority more than 0 or negative values requires root previlige
