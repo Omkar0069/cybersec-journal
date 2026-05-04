@@ -62,3 +62,15 @@ What I learned?
 **Chapter 8 - Revision**
 What I learned?
     can be use to run nmap scan (I build my own nmap scanner)
+
+**Chapter 9 - Study**
+    -tar = tape archive, used to combine multiple files together also known as archives
+        -gzip(GNU zip) = .tar.gz or .tgz, decompress by gunzip
+        -bzip2 = .tar.bz2, bunzip2 for decompressing
+        -compress = .tar.z, uncompress for decompressing
+    -dd - Linux archiving command stand on the top of the rest in its usefulness, used copy
+          entire disk, hard drive, filesystem
+        Deleted files wont be copy using most logical utility, cp
+
+**Chapter 10 - Study**
+    -dev: dev stands for device dev contains all the files representing attached device
