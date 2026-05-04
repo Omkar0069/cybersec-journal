@@ -49,3 +49,9 @@ Where I stuck?
     -renice - used to set priority after the process starts or already running process
             renice -n 10 -p 123
     NOTE: priority more than 0 or negative values requires root previlige
+
+**Chapter 7 - Revision**
+    Need one more revision
+
+**Chapter 8 - Revision**
+    Need one more revision
