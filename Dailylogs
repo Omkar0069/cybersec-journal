@@ -40,10 +40,11 @@ Where I stuck?
     -Nowhere !
 
 **Chapter 5 - Revision**
-    What I learned?
+What I learned?
         -Nothing new just revision.
 
 **Chapter 6 - Revision**
+What I learned?
     -nice - used to control process priority, nice is used to set priority before the process starts
             nice -n 10 command
     -renice - used to set priority after the process starts or already running process
@@ -51,7 +52,13 @@ Where I stuck?
     NOTE: priority more than 0 or negative values requires root previlige
 
 **Chapter 7 - Revision**
-    Need one more revision
+What I learned?
+    $PATH are variables that system check before everthing and provides the output from that 
+    if you want to run an executable file from anywhere in the system add it to the PATH variable
+    and walla you can execute it from anywhere
+    I personally created a script to update and upgrade the system and added it to the path
+
 
 **Chapter 8 - Revision**
-    Need one more revision
+What I learned?
+    can be use to run nmap scan (I build my own nmap scanner)
