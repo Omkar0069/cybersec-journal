@@ -89,5 +89,23 @@ What I learned?
                          shred filename # Deletes the file and overwrite several time to erase the
                          traces
                          
-                         
+**Chapter 12- Study**
+    Service is an application that runs in the background waiting for you to use it 
+    To start a service: sudo systemctl start *service name*
+    To stop a service: sudo systemctl stop *service name*
+    To restart a service: sudo systemctl restart *service name*
+
+    SSH: SSH is an acronym for Secure Shell, is connect securely to a terminal on a remote system
+    To start a ssh on the system use the following command
+    sudo systemctl start ssh
+
+    Databases are the “golden fleece” for hackers. They contain critical
+    information about users as well as confidential information such as credit
+    card numbers. For this reason, hackers are most often targeting databases.
+    Few common commands:
+    select: Retrive Data
+    union: Combines the result of 2 or more select options
+    insert: Add new data
+    update: Modifies existing data
+    delete: Deletes data
 
