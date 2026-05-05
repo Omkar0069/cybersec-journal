@@ -74,3 +74,20 @@ What I learned?
 
 **Chapter 10 - Study**
     -dev: dev stands for device dev contains all the files representing attached device
+
+**Chapter 11 - Study**
+    journalctl - A journal where computer stores its activities and events, i.e, Logging System
+                 It makes retrieving and viewing logfiles much easier.
+                 Typing journalctl on screen shows every log entry on you sceen that can be useful
+                 but has to much information so we can use different flags/options with journalctl
+                 to make the work easier
+                
+                Log Priorities: Reflect different priorities for the operating system and sysadmin
+                List: emerg(0), alert(1), crit(2), err(3), warning(4), notice(5), info(6), debug(7)
+                command: journalctl -p "prority/priority-number"
+                         journalctl -u service # To view log of a particular entry
+                         shred filename # Deletes the file and overwrite several time to erase the
+                         traces
+                         
+                         
+
