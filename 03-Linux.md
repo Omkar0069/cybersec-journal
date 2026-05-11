@@ -109,3 +109,13 @@ Basic syntax: sudo command
 5. set the path: export PATH=$PATH:$HOME/.local/bin
 6. Done!
 Now you can call that file from anywhere regardless in what directory you are in, LOL!
+
+
+**Hidden Files**
+In linux hidden files are listed with [.] at the beginning, they are not specially encrypted or smth like that just hidden using normal listing for convention to view all the files including hidden files use ls with -a flag, i.e., ls -a
+Some important hidden files:
+1. .bashrc: runs shell settings for interactive bash shell.
+2. .profile: login shell environment setup.
+3. .ssh/: contains ssh keys, authorized_keys, config.
+4. .git/: git repository metadat.
+5. .config/: modern apps store per-user config here.
