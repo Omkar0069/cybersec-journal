@@ -20,4 +20,55 @@ Modes: Wifi can Operate in one of the 3 modes: managed, master and monitor
 Wireless Range: In U.S., Wifi must legally broadcast its signal at an upper limit of 0.5 watt. At this power it has a normal range from 300 feet (100 meters). High-gain antennas can extend this range to as much as 20 miles!
 Frequency: Wifi is designed to operate on 2.4GHz and 5GHz, modern wifi APs and wireless network cards use both.
 
-nmcli dev wifi - shows all the wifi aps in the radius 
+nmcli dev wifi - shows all the wifi aps in the radius
+
+**Linux Filesystem**: In Linux filesystem is a hierarchical structure to organise, store and manage files and directories. It follows a tree like structure starting from a single root directory /.
+In linux everything is file; regular text, images, binaries are files, directories are folders, devices are treated as file (e.g., hard disk, USB), process and sockets also appears to be a file
+This is the linux's everything is file philosophy.
+
+Directories and structures:
+
+    /
+    |----bin
+    |----etc
+    |----home
+    |----var
+    |----usr
+    |----...
+
+/ = root directory, topmost directory and contains all other directory, everything starts from here
+
+**Important Directories**
+
+1. /bin (binary executables): Essential command binaries, used by all users, e.g., ls, cp, mv, cat mainly used to execute commands if any binary is removed the command will not work related to that binary.
+2. /home: This is the home directory of the user contains all the user's private files, documents, etc
+3. /etc: This directory contains all the system configuration files, e.g., /etc/passwd /etc/shadow /etc/network etc
+4. /root: Home directory for the root user
+5. /var: Frequently changed data, /var/log /var/cache /var/mail
+6. /usr: User Program, Secondary Hierarchy, contains: /usr/bin - user commands, /usr/lib - libraries /usr/share - shared data
+7. /dev: Hardware devices are represented as files, /dev/sda - hard disk /dev/null - null device
+8. /tmp: Contains temporary files, usually deleted after boot
+
+**Types of Files in Linux**
+
+**Types**               **Symbol**              **Description**
+- Regular file        -                   Text, binary
+- Directory           d                   Folder
+- Link                l                   Shortcut
+- Character device    c                   Keyboard, Mouse
+- Block Device        b                   Hard Disk
+- Socket              s                   Communication
+- Pipes               p                   Inter-process communication
+
+**Commands**
+- pwd - Prints working directory or the absolute path till the current directory
+- ls - Lists the files and folders in the current directory, use -a flag to show all the files and folders including hidden files and -l is used to show a detailed info like size, owner, user, permissions etc
+- cd - Used to navigate from one directory to another, use cd .. to move 1 level up (We cannot navigate inside files)
+- mkdir - Creates directory, mkdir *directory_name*
+- rmdir - Removes directory, rmdir *directory_name* (Note: rmdir cannot remove non-empty directory)
+- touch - Used to create files, touch *filename*
+- rm - Used to remove files, use rm -r *directory_name* to remove non-empty directory
+- cp - Used to copy, cp *source* *destination*
+- mv - Used to move and rename file mv *source* *destination* | mv *oldname* *newname*
+- cat - Used to display data from file, cat *filename*
+- nano - Inbuild Text editor, nano *filename* if the file exist opens existing file else create a new file and opens that
