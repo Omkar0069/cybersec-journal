@@ -119,3 +119,13 @@ Some important hidden files:
 3. .ssh/: contains ssh keys, authorized_keys, config.
 4. .git/: git repository metadat.
 5. .config/: modern apps store per-user config here.
+
+**What is openssl?**
+A toolbox for secure communication and cryptography
+
+To start a connection between sever use the follow command:
+*openssl s_client -connect localhost:30001*
+openssl: for secure communication
+s_client: secure client i.e., SSL/TLS client
+-connect: start connection
+localhost:30001 : at localhost on port 30001
