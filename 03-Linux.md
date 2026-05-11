@@ -72,3 +72,18 @@ Directories and structures:
 - mv - Used to move and rename file mv *source* *destination* | mv *oldname* *newname*
 - cat - Used to display data from file, cat *filename*
 - nano - Inbuild Text editor, nano *filename* if the file exist opens existing file else create a new file and opens that
+
+**PERMISSIONS**
+
+**chown**: Is used to change owner and/or owner and group
+sudo chown owner filename
+sudo chown owner:group filename
+**chgrp**: Used to change group
+sudo chgrp groupname filename
+**chmod**: Used to change mode(Permissions)
+sudo chmod (permission) filename. e.g., chmod 700 secret.txt
+
+To switch between users use *su - username* command
+To change password: sudo passwd username
+To remove user: sudo userdel username
+To remove group: sudo groupdel groupname
