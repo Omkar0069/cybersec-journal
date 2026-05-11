@@ -87,3 +87,25 @@ To switch between users use *su - username* command
 To change password: sudo passwd username
 To remove user: sudo userdel username
 To remove group: sudo groupdel groupname
+
+**sudo**
+sudo commands means "superuser do" it lets the authorized user to run a command with elevated privileges usually admin/root without logging in as root.
+Used in:
+- Installing software
+- edit /etc configurations
+- chown
+- chmod
+- permissions
+- modify system networking settings
+
+Basic syntax: sudo command
+
+**How to add a file to path**
+
+1. create a file
+2. create a folder: ~/.local/bin
+3. make it executable: sudo chmod +x ~/.local/bin/file
+4. move that file there: mv file ~/.local/bin
+5. set the path: export PATH=$PATH:$HOME/.local/bin
+6. Done!
+Now you can call that file from anywhere regardless in what directory you are in, LOL!
