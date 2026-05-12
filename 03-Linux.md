@@ -129,3 +129,25 @@ openssl: for secure communication
 s_client: secure client i.e., SSL/TLS client
 -connect: start connection
 localhost:30001 : at localhost on port 30001
+
+**COMMANDS**
+ping - Ping is a network diagnostic utility to check reachability, latency and packet loss between your machine and the host on a network. It sends ICMP Echo Request packets and waits for ICMP Echo Reply responses.
+
+Syntax: ping google.com
+
+What it does:
+1. Resolves IP address of google.com using DNS server
+2. Sends ICMP Echo Request packets to that IP
+3. Waits for the reply packets
+4. Measures Round Trip Time(RTT)
+5. Repeats continuosly until stopped (Ctrl + C)
+
+Important Options
+-c: Send fixed number of packets., ping -c 5 google.com
+-i: Intervals, seconds between packets., ping -i 2 google.com
+-w: Timeout, wait time for each reply
+-p: Custom payload size., ping -p 1000 google.com
+-4: ipv4
+-6: ipv6
+-f: flood, sends packet as fast as possible
+-a: audible, beeps when response recieved
