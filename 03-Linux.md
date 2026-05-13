@@ -131,23 +131,111 @@ s_client: secure client i.e., SSL/TLS client
 localhost:30001 : at localhost on port 30001
 
 **COMMANDS**
-ping - Ping is a network diagnostic utility to check reachability, latency and packet loss between your machine and the host on a network. It sends ICMP Echo Request packets and waits for ICMP Echo Reply responses.
+1. ping - Ping is a network diagnostic utility to check reachability, latency and packet loss between your machine and the host on a network. It sends ICMP Echo Request packets and waits for ICMP Echo Reply responses.
 
 Syntax: ping google.com
 
 What it does:
-1. Resolves IP address of google.com using DNS server
-2. Sends ICMP Echo Request packets to that IP
-3. Waits for the reply packets
-4. Measures Round Trip Time(RTT)
-5. Repeats continuosly until stopped (Ctrl + C)
+    1. Resolves IP address of google.com using DNS server
+    2. Sends ICMP Echo Request packets to that IP
+    3. Waits for the reply packets
+    4. Measures Round Trip Time(RTT)
+    5. Repeats continuosly until stopped (Ctrl + C)
 
 Important Options
--c: Send fixed number of packets., ping -c 5 google.com
--i: Intervals, seconds between packets., ping -i 2 google.com
--w: Timeout, wait time for each reply
--p: Custom payload size., ping -p 1000 google.com
--4: ipv4
--6: ipv6
--f: flood, sends packet as fast as possible
--a: audible, beeps when response recieved
+    -c: Send fixed number of packets., ping -c 5 google.com
+    -i: Intervals, seconds between packets., ping -i 2 google.com
+    -w: Timeout, wait time for each reply
+    -p: Custom payload size., ping -p 1000 google.com
+    -4: ipv4
+    -6: ipv6
+    -f: flood, sends packet as fast as possible
+    -a: audible, beeps when response recieved
+
+2. curl - curl or Client URL is a command line tool use for transferring data over network. It supports HTTP, HTTPS, SMTP, FTP, and 30+ other network protocols.
+
+Syntax: curl [flags] [URL]
+
+Important Flags:
+    -x POST: Set HTTP method(GET, PUT, POST, DELETE...)
+    -H "Key: val": Add a custom header
+    -d "data": Send POST body data
+    -I: Fetch header only(Head request)
+    -i: Show header + body together
+    -v: Verbose, full http conversation
+    -L: Follow redirects
+    -o file.html: Save output to file
+
+3. wget - wget is a non-interactive download tool pre-installed in kali. Simpler version of curl, wget is used for downloading stuff, especially recursively.
+
+Syntax: wget [flag] [URL]
+
+Important Flags:
+    -v: Verbose
+    -r: Download recursively
+    -q: Quiet mode(No output)
+    -c: Resume interrupted download
+    -o file.html: Save custom filename
+
+4. ssh - ssh or Secure Shell is cryptographic tool used to remotely access other machines. On Kali, it's your primary access tool for remote access, pivoting, tunneling, and port forwarding during pentests.
+
+Syntax: ssh [user]@[host] -p [port]
+
+Important Flags:
+    -p: connect to custom port default is 22
+    -i: Use private keyfile for authentication
+    -L: Local port forwarding
+    -R: Remote port forwarding
+    -D: Dynamic port forwarding
+    -f: Run in background
+    -v: Verbose
+
+5. netstat - netstat or network statistic is a CLI tool used to monitor network connections, open ports, routing tables, interface stats. It is used for recon, finding what's running locally and spoting suspicious connections.
+
+Syntax: netstat [flags]
+Important Flags:
+    -t: Show TCP connections
+    -u: Show UDP connections
+    -a: Show all connections(listen + established)
+    -p: Show PID + Process name
+    -n: Show IPs numerically
+
+6. ss: Socket Statistics is the modern replacement for netstat. Faster, more detailed and build into every linux system. On Kali it is used to inspect socket, open ports, and active connections
+
+Syntax: ss [flag]
+
+Important Flags:
+    -t: Show TCP connections
+    -u: Show UDP connections
+    -l: Listening ports only
+    -n: Numeric IPs
+    -p: Show PID + Process name
+
+7. ip: Modern tool replacement for ifconfig and route. It is used for managing network interface, routing ARP tables and tunnels. Part of iproute2 package - always available.
+
+Syntax: ip [object] [command]
+
+Important Flags:
+    ip addr: Show IP addresses on all interface.
+    ip link: Show network interfaces
+    ip route: Show routing table
+    ip neigh: Show ARP table
+    ip tunnel: Manages tunnels
+    ip rule: Show routing policy rules
+
+8. ifconfig: Similar to ip but used in old school, shows and configures network interfaces
+
+syntax: ifconfig
+
+9. traceroute: traceroute maps the path packets take from you machine to target-every hop(router) along the way. Used for network recon, latency diagnosis, and mapping infrastructure.
+
+Syntax: traceroute [flag] [target]
+
+Important Flags:
+    -n: Numeric IPs, no DNS lookup
+    -m: 20 Max hops(default 30)
+    -w 3: Wait 3 seconds per hop
+    -I: Use ICMP instead of UDP
+    -T: Use TCP 
+    -p: Use specific port
+    -i: Use specific interface
