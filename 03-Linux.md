@@ -171,7 +171,7 @@ Important Flags:
     -L: Follow redirects
     -o file.html: Save output to file
 
-3. wget - wget is a non-interactive download tool pre-installed in kali. Simpler version of curl, wget is used for downloading stuff, especially recursively.
+3. wget - web-get is a non-interactive download tool pre-installed in kali. Simpler version of curl, wget is used for downloading stuff, especially recursively.
 
 Syntax: wget [flag] [URL]
 
@@ -185,6 +185,7 @@ Important Flags:
 4. ssh - ssh or Secure Shell is cryptographic tool used to remotely access other machines. On Kali, it's your primary access tool for remote access, pivoting, tunneling, and port forwarding during pentests.
 
 Syntax: ssh [user]@[host] -p [port]
+e.g., ssh localhost (make sure to use sudo systemctl start ssh)
 
 Important Flags:
     -p: connect to custom port default is 22
