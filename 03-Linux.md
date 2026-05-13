@@ -135,9 +135,14 @@ localhost:30001 : at localhost on port 30001
 
 Syntax: ping google.com
 
-What it does:
+What a packet actually is
+A packet is literally just a labelled envelope of data. It has a "from" address (source IP), a "to" address (destination IP), a TTL countdown, a type code, some dummy payload bytes, and a checksum to verify nothing got corrupted. That's it. Nothing magical — just structured bytes.
+
+What a packet does
+It carries your "Hello, are you there?" question from your machine, hop by hop through routers, until it reaches the target. The target reads the Type field (8 = echo request), flips it to Type 0 (echo reply), and sends the exact packet back to you. Your OS measures the time between send and reply — that's your RTT (round-trip time).
+
     1. Resolves IP address of google.com using DNS server
-    2. Sends ICMP Echo Request packets to that IP
+    2. Sends ICMP Echo Request packets to that IP (ICMP is Internet Control Message Protocol is used to send error, control and diagnostic message in an IP network, It does not contains the actual data just like bruh your message didn't make it)
     3. Waits for the reply packets
     4. Measures Round Trip Time(RTT)
     5. Repeats continuosly until stopped (Ctrl + C)
