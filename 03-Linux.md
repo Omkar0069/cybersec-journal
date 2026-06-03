@@ -245,3 +245,12 @@ Important Flags:
     -T: Use TCP 
     -p: Use specific port
     -i: Use specific interface
+
+**Python Scripting**
+Python has some important features that make it particularly well suited for
+hacking, but probably most important, it has a huge variety of libraries—
+prebuilt modules of code that can be imported externally and reused—that
+provide some powerful functionality. Python ships with over 1,000 modules
+built in, and many more are available in various other repositories.
+
+When you download this packages, they are automatically placed in the /usr/local/lib/<Python-version>/dists packages
