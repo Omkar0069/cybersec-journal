@@ -19,3 +19,5 @@ Physical Layer - actual wire connected to the devices, transfer data in binary
 5. SMTP (Simple Mail Transfer Protocol): Sends email
 6. SMNP (Simple Network Management Protocol): Monitors and manages network devices
 7. TFTP (Trivial File Transfer Protocol): Simple file transfer, often used to network device configuration
+
+**Who do I ask when I need to convert domain name into IP - It goes first in /etc/resolve.conf"
