@@ -99,3 +99,20 @@ google.com.		259	IN	A	192.178.174.102
 5. curl: curl or Client URL is a command line tool use for transferring data over network. It supports HTTP, HTTPS, SMTP, FTP, and 30+ other network protocols.
 
 Syntax: curl [flags] [URL]
+
+sudo tcpdump -i any: sudo - can see all the packets, tcpdump: A command line packet sniffer(Show me all the packets entering or leaving the system), -i - Which Interface to listen on , any - show all the packets
+
+6. nc: NetCat is often called the swiss army knife of networking
+It can:
+Open TCP connection
+Open UDP connection
+Listen on Ports
+Send Data
+Recieve Data
+Transfer files
+Test Services
+
+e.g., nc google.com 80 (connect to google.com on port 80)
+nc -lvnp 4444
+then on other computer nc 127.0.0.1 4444
+yeah you established a tcp connection
