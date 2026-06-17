@@ -254,3 +254,26 @@ provide some powerful functionality. Python ships with over 1,000 modules
 built in, and many more are available in various other repositories.
 
 When you download this packages, they are automatically placed in the /usr/local/lib/<Python-version>/dists packages
+
+
+**SOMETHING ABOUT GIT**
+1. Repository(repo): It's just a directory that git tracks 
+2. Commit: A snapshot of your project at a specific point in time, can view them using git log
+3. git show: Lets you inspect an object; git show f4cKy0U
+4. Branch: A Branch is just a pointer to the series of commit
+5. Remote Branches: When you do git clone ... git remember where it came from: origin 
+6. Tag: Tag is a label attached to an object. Instead of remembering f4cKy0U
+you can write helloDear
+7. show-ref: git stores references (pointers). Example
+abc123 refs/heads/master
+def456 refs/heads/dev
+ghi789 refs/tags/secret
+
+
+**COMMANDS EVERY PENTESTER SHOULD REMEMBER**
+git log --oneline --all
+git branch -a
+git tag
+git show-ref
+git show <commit/tag>
+git cat-file -p <hash>
